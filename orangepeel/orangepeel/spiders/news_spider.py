@@ -44,12 +44,4 @@ class HistoricalSpider(scrapy.Spider):
                     'text': ' '.join(response.xpath(self.text_tag).extract()), 
                     }
 
- 
-star_urls ='//*[@class="f18"]/a/@href'
-star_title  = '//*[@class="headline story-pg"]//h1//text()' 
-star_region = '//*[@class="kicker"][@data-list-type="Article"]/text()' 
-star_date = '//*[@class="date"]//text()' 
-star_text = '//*[@id="story-body"]//text()'
-
- 
 # runSpider(url_list, star_urls, star_title, star_region, star_text, 'test.json')

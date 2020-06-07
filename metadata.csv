@@ -1,0 +1,2 @@
+,name,base,urls,title,region,date,text
+0,'The Star','https://www.thestar.com.my/search?pgno={number}&q=undocumented&qsort=newest&qrec=10&qstockcode=',"'//*[@class=""f18""]/a/@href'","'//*[@class=""headline story-pg""]//h1//text()'","'//*[@class=""kicker""][@data-list-type=""Article""]/text()'","'//*[@class=""date""]//text()'","'//*[@id=""story-body""]//text()' "
