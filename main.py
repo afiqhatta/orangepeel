@@ -1,14 +1,15 @@
 import os
 from flask import Flask, render_template
 from apscheduler.schedulers.background import BackgroundScheduler
+import numpy as np
 
 
 app = Flask(__name__)
 
 def sensor():
     """ Function for test purposes. """
-    with open("static/time-log.txt", "a") as myfile:
-        myfile.write("TIME: 312.15")
+    with open("static/time-log.txt", "w") as myfile:
+        myfile.write("TIME: {}".format(np.random.randint(10)))
     print("Scheduler is alive!")
 
 
