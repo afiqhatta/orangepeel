@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<
+DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -19,7 +20,7 @@
     function fetchData() {
       console.log('Fetching updated data.');
       let xhr = new XMLHttpRequest();
-      xhr.open("GET", "static/time-log.txt", true);
+      xhr.open("GET", "static/time-log.txt?t=" + Math.random(), true);
       xhr.onload = function() {
         updateDisplay(xhr.response);
       }
